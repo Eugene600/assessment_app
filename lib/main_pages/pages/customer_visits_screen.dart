@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../../activities/activities.dart';
 import '../../customers/customers.dart';
 import '../../visits/visits.dart';
+import '../widgets/widgets.dart';
 
 class CustomerVisitsScreen extends ConsumerStatefulWidget {
   const CustomerVisitsScreen({super.key});
@@ -155,6 +156,34 @@ class _CustomerVisitsScreenState extends ConsumerState<CustomerVisitsScreen> {
                               },
                             ),
                             const SizedBox(height: 12),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16.0,
+                                vertical: 8,
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  LegendIcon(
+                                    icon: Icons.check_circle_outline,
+                                    label: "Completed",
+                                    color: Colors.green,
+                                  ),
+                                  const SizedBox(width: 16),
+                                  LegendIcon(
+                                    icon: Icons.access_time,
+                                    label: "Pending",
+                                    color: Colors.amber,
+                                  ),
+                                  const SizedBox(width: 16),
+                                  LegendIcon(
+                                    icon: Icons.cancel,
+                                    label: "Cancelled",
+                                    color: Colors.red,
+                                  ),
+                                ],
+                              ),
+                            ),
                             Row(
                               children: [
                                 Expanded(
