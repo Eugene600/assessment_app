@@ -16,10 +16,9 @@ class ResponsiveWidgetFormLayout extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         Color? color;
-        color = theme.colorScheme.onPrimary;
-        // if (constraints.maxWidth > Constants.mediumScreenWidth) {
-        //   color = theme.colorScheme.onPrimary;
-        // }
+        if (constraints.maxWidth > Constants.mediumScreenWidth) {
+          color = theme.colorScheme.onPrimary;
+        }
         //Large Screen
         return Center(
           child: ConstrainedBox(
