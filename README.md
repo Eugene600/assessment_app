@@ -21,10 +21,10 @@ This Flutter application is designed to manage and track customer visits and ass
 ![Stats Dashboard](assets/images/stats_screenshot.jpeg)
 
 ### Add Visit Form Dark Mode
-![Add Visit](assets/images/visit_screenshot.jpeg)
+![Add Visit](assets/images/visit_screenshot_dark.jpeg)
 
 ### Customer Visits List Dark Mode
-![Customer Visits](assets/images/customer_visit_screenshot.jpeg)
+![Customer Visits](assets/images/customer_visit_screenshot_dark.jpeg)
 
 ### Statistics Dashboard Dark Mode
 ![Stats Dashboard](assets/images/stats_screenshot_dark.jpeg)
