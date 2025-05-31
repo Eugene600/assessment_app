@@ -67,7 +67,7 @@ Follow these steps to run the app locally:
 
 ```bash
 git clone https://github.com/Eugene600/assessment_app/
-cd solutech_technical_assessment_app
+cd assessment_app
 ```
 
 ### 2. Install Dependencies
