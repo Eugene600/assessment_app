@@ -11,8 +11,23 @@ This Flutter application is designed to manage and track customer visits and ass
 
 ## Screenshots
 
-_Screenshots will be added later._
+### Add Visit Form
+![Add Visit](assets/images/visit_screenshot.jpeg)
 
+### Customer Visits List
+![Customer Visits](assets/images/customer_visit_screenshot.jpeg)
+
+### Statistics Dashboard
+![Stats Dashboard](assets/images/stats_screenshot.jpeg)
+
+### Add Visit Form Dark Mode
+![Add Visit](assets/images/visit_screenshot.jpeg)
+
+### Customer Visits List Dark Mode
+![Customer Visits](assets/images/customer_visit_screenshot.jpeg)
+
+### Statistics Dashboard Dark Mode
+![Stats Dashboard](assets/images/stats_screenshot_dark.jpeg)
 ---
 
 ## Architectural Overview
@@ -72,6 +87,35 @@ API_KEY=your_api_key_here
 ```bash
 flutter run
 ```
+
+### **Running Unit Tests**
+
+### 1.  Where Tests Live
+All test files are located inside the /test directory, for example:
+```bash
+test/
+├── activities/
+│   ├── activity_notifier_test.dart
+│   └── mock_activity_repository.mocks.dart
+```
+
+### 2. Run All Tests
+In your terminal, from the root of the project:
+```bash
+flutter test
+```
+
+### 3. Generating Mocks with Mockito
+This project uses the Mockito package for mocking dependencies like repositories.
+Before running tests that depend on mocks, generate them using:
+```bash
+flutter pub run build_runner build
+```
+The test involves classes annotated with @GenerateMocks, like this:
+```bash
+@GenerateMocks([ActivityRepository])
+```
+The mock_activity_repository.mocks.dart will be auto-generated.
 
 ### **Assumptions, Trade-offs, and Limitations**
 - The app assumes stable network connectivity during API operations.
