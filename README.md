@@ -66,7 +66,7 @@ Follow these steps to run the app locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/solutech_technical_assessment_app.git
+git clone https://github.com/Eugene600/assessment_app/
 cd solutech_technical_assessment_app
 ```
 
